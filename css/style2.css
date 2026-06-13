@@ -1,0 +1,180 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+}
+
+
+header{
+    background:linear-gradient(
+        90deg,
+        #4f46e5,
+        #06b6d4
+    );
+
+    color:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 40px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:500;
+}
+
+nav a:hover{
+    opacity:.8;
+}
+
+
+.hero{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.hero h1{
+    color:#4f46e5;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#64748b;
+}
+
+
+.profile-section{
+
+    display:flex;
+    justify-content:center;
+
+    margin-top:20px;
+}
+
+.profile-card{
+
+    width:800px;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:30px;
+
+    display:flex;
+
+    gap:30px;
+
+    align-items:center;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.1);
+}
+
+.avatar{
+
+    width:180px;
+    height:180px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    border:6px solid #4f46e5;
+}
+
+.avatar img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+.info h2{
+
+    color:#4f46e5;
+    margin-bottom:15px;
+}
+
+.info p{
+
+    margin:10px 0;
+    font-size:17px;
+}
+
+
+.dashboard{
+
+    width:90%;
+    margin:50px auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+}
+
+.card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+}
+
+.card h2{
+
+    color:#4f46e5;
+    margin-bottom:10px;
+}
+
+
+.logout-btn{
+
+    background:#ef4444;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    margin-top:20px;
+}
+
+.logout-btn:hover{
+    opacity:.9;
+}
+
+.admin-link{
+    color:#fef08a !important;
+    font-weight:bold;
+}

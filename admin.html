@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Panel</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<body>
+    <header>
+
+        <div class="logo">EventTech</div>
+
+        <nav>
+
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="group.html">Groups</a>
+            <a href="contact.html">Contact Us</a>
+
+        </nav>
+
+    </header>
+
+
+    <div class="container">
+
+    <h2>Admin Travel Data</h2>
+
+    <input type="text" id="location" placeholder="Where are you going?">
+
+    <input type="date" id="startDate">
+
+    <input type="date" id="endDate">
+
+    <input type="text" id="price" placeholder="Total price">
+
+    <textarea id="paidBy" placeholder="Who paid?"></textarea>
+
+    <textarea id="debtors" placeholder="Who still needs to pay?"></textarea>
+
+    <button onclick="sendData()">Send to AI</button>
+
+    <p id="msg"></p>
+    <h2>Create / Update Trip</h2>
+
+    <input id="location" placeholder="Location">
+    <input id="startDate" type="date">
+    <input id="endDate" type="date">
+    <input id="price" placeholder="Price">
+
+    <h3>Paid Users (comma separated)</h3>
+    <input id="paidBy" placeholder="john, anna">
+
+    <h3>Debtors (comma separated)</h3>
+    <input id="debtors" placeholder="mike, sara">
+
+    <button onclick="send()">Save Trip</button>
+
+    <hr>
+
+    <h3>Update Trip ID</h3>
+    <input id="tripId" placeholder="Trip ID">
+
+    <button onclick="updateTrip()">Update</button>
+
+    </div>
+
+    <script src="admin.js"></script>
+
+</body>
+</html>

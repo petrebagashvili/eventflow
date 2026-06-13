@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Groups</title>
+<link rel="stylesheet" href="./css/style4.css">
+</head>
+<body>
+
+    <header>
+        <div><b>EventTech Groups</b></div>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="group.html">Groups</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+    <div id="adminPanel" class="admin-panel">
+        <h3>Create Group (Admin Only)</h3>
+
+        <input type="text" id="groupName" placeholder="Group Name">
+        <input type="text" id="groupAge" placeholder="Age Type (under30 / 30to50 / 50plus / family)">
+
+        <button class="create" onclick="createGroup()">
+            Create Group
+        </button>
+    </div>
+
+    <div class="grid" id="groupList"></div>
+    <script src="js/group.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+
+    <header>
+
+        <div class="logo">
+            EventTech
+        </div>
+
+        <nav>
+
+            <a href="home.html">Home</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="group.html">Groups</a>
+
+            <a href="contact.html">Contact Us</a>
+
+            <span id="adminMenu"></span>
+
+        </nav>
+
+    </header>
+
+    <section class="hero">
+
+        <h1 id="welcome">
+            Welcome
+        </h1>
+
+        <p>
+            Event Management Platform
+        </p>
+
+    </section>
+
+    <section class="profile-section">
+
+        <div class="profile-card">
+
+            <div class="avatar">
+
+                <img
+                    id="profileImage"
+                    src="https://via.placeholder.com/200"
+                    alt="Profile">
+
+            </div>
+
+            <div class="info">
+
+                <h2 id="profileName">
+                    User Name
+                </h2>
+
+                <p>
+                    <strong>Email:</strong>
+                    <span id="profileEmail"></span>
+                </p>
+
+                <p>
+                    <strong>Age:</strong>
+                    <span id="profileAge"></span>
+                </p>
+
+                <p>
+                    <strong>Group:</strong>
+                    <span id="profileGroup"></span>
+                </p>
+
+                <p>
+                    <strong>Role:</strong>
+                    <span id="profileRole"></span>
+                </p>
+
+                <button
+                    class="logout-btn"
+                    onclick="logout()">
+
+                    Logout
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="dashboard">
+
+        <div class="card">
+
+            <h2>Groups</h2>
+
+            <p>
+                Join and manage groups.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Events</h2>
+
+            <p>
+                View upcoming events.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Contact</h2>
+
+            <p>
+                Get support anytime.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h2>AI Assistant</h2>
+
+            <p>
+                Ask questions and get help.
+            </p>
+
+        </div>
+
+    </section>
+    <button onclick="logout()">
+    Logout
+    </button>
+
+    <script src="js/auth.js"></script>
+
+</body>
+</html>
