@@ -8,8 +8,8 @@
 body{
     min-height:100vh;
     display:flex;
-    justify-content:center;
-    align-items:center;
+    flex-direction: column;
+
 
     background:linear-gradient(
         135deg,
@@ -17,8 +17,42 @@ body{
         #06b6d4
     );
 }
+header{
+    background:linear-gradient(
+        90deg,
+        #4f46e5,
+        #06b6d4
+    );
 
+    color:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 40px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:500;
+}
+
+nav a:hover{
+    opacity:.8;
+}
 .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width:420px;
     padding:20px;
 }
